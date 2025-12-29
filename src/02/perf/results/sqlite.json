@@ -1,0 +1,60 @@
+{
+  "timestamp": "2025-12-29T08:08:39.713Z",
+  "operations": [
+    {
+      "operation": "CREATE TABLE balances",
+      "mcycles": "3994355",
+      "instret": "436"
+    },
+    {
+      "operation": "BATCH INSERT 10 holders",
+      "mcycles": "3083925",
+      "instret": "873"
+    },
+    {
+      "operation": "BATCH INSERT 50 holders",
+      "mcycles": "4186140",
+      "instret": "3105"
+    },
+    {
+      "operation": "BATCH INSERT 100 holders",
+      "mcycles": "5950526",
+      "instret": "5952"
+    },
+    {
+      "operation": "BATCH INSERT 500 holders",
+      "mcycles": "19010230",
+      "instret": "28573"
+    },
+    {
+      "operation": "SELECT COUNT all",
+      "mcycles": "2883065",
+      "instret": "331"
+    },
+    {
+      "operation": "SUM all balances",
+      "mcycles": "3243488",
+      "instret": "361"
+    },
+    {
+      "operation": "TOP 100 HOLDERS",
+      "mcycles": "9843699",
+      "instret": "6066"
+    },
+    {
+      "operation": "UPDATE all +10%",
+      "mcycles": "5425143",
+      "instret": "314"
+    },
+    {
+      "operation": "SELECT WHERE amount>5000",
+      "mcycles": "3338383",
+      "instret": "355"
+    }
+  ],
+  "summary": {
+    "totalOperations": 10,
+    "totalMcycles": "60958954",
+    "totalInstret": "46366"
+  }
+}

@@ -1,13 +1,15 @@
 {
   "name": "rollups-101-workshop",
   "private": true,
-  "version": "0.0.0",
+  "version": "",
   "packageManager": "pnpm@10.13.1",
   "type": "module",
   "scripts": {
     "dev": "vocs dev",
     "build": "vocs build",
-    "preview": "vocs preview"
+    "preview": "vocs preview",
+    "codegen": "wagmi generate",
+    "bench:sqlite": "tsx src/02/perf/sqlite.ts"
   },
   "dependencies": {
     "react": "latest",
@@ -16,6 +18,14 @@
   },
   "devDependencies": {
     "@types/react": "latest",
-    "typescript": "latest"
+    "typescript": "latest",
+    "@cartesi/rollups": "^2.0.1",
+    "@tuler/node-cartesi-machine": "^0.8.0",
+    "@types/node": "^24.1.0",
+    "@wagmi/cli": "^2.3.2",
+    "prettier": "^3.7.4",
+    "tsx": "^4.19.2",
+    "viem": "^2.33.0",
+    "vitest": "^3.2.4"
   }
 }
