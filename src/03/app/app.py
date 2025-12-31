@@ -1,3 +1,4 @@
+import json
 import logging
 from cmpy import Rollup, decode_ether_deposit, decode_erc20_deposit, decode_advance, decode_inspect
 
@@ -46,8 +47,9 @@ def handle_inspect(rollup):
     try:
         decoded_inspect = decode_inspect(inspect)
         logger.info(f"[app] Inspect decoded {decoded_inspect}")
+        rollup.emit_report(json.dumps(decoded_inspect).encode())
         return True
-    
+
     except Exception as e:
         logger.error(f"[app] Failed to decode inspect: {e}")
         logger.info("[app] unidentified input")

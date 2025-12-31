@@ -1,7 +1,7 @@
-import { rollups, spawn, Reg } from "@tuler/node-cartesi-machine";
 import { getAddress, Hex } from "viem";
-import { encodeAdvanceInput } from "./encoder";
 import { writeFileSync, mkdirSync } from "fs";
+import { encodeAdvanceInput } from "../../../encoder";
+import { rollups, spawn, Reg } from "@tuler/node-cartesi-machine";
 
 interface BenchmarkResult {
   operation: string;
